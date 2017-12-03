@@ -1,0 +1,251 @@
+/*
+
+    *** COLOR LIST ***
+
+    #0ed8d6 - contrast-color
+    #333333 - header-color
+    #777777 - other-text-color
+    #f7f7f7 - portfolio-section-color
+    #222222 - social-media
+
+
+        .mont-style {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #333333;
+            text-transform: uppercase;
+        }
+
+        .italic-style {
+            font-family: 'Droid Serif';
+            font-style: italic;
+            color: #777777;
+        }
+
+        .par-style {
+            font-family: 'Roboto Slab', serif;
+            color: #777777;
+        }
+
+        .buttons {
+            color: #fff;
+            background-color: #0ed8d6;
+        }
+
+        .portfolio {
+            background-color: #f7f7f7;
+        }
+
+*/
+
+/* General styles - start */
+
+body {
+    /* do usunięcia */
+    background-color: lightgrey;
+    font-family: 'Roboto Slab', serif;
+}
+
+p {
+    color: #777777;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 50px 0px;
+}
+
+section {
+    padding: 150px 0px;
+}
+
+section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+/* General styles - end */
+
+/* Navbar styles - start */
+
+.navbar {
+    padding: 20px;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-scroll {
+    background-color: #0ed8d6;
+    transition: all .4s ease-in-out;
+}
+
+.navbar-scroll:hover {
+    color: #777777;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Droid Serif';
+    font-style: italic;
+    color: #fff;
+    transition: all .4s ease-in;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .4s ease-in;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #0ed8d6;
+}
+
+/* Navbar styles - end */
+
+/* main header styles - start */
+
+.main-header {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header/DeathtoStock_Wired2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.main-header h2 {
+    font-family: 'Droid Serif', sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.main-header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-header a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    text-transform: uppercase;
+    transition: all .3s;
+    margin-top: 30px;
+}
+
+.main-header a:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #0ed8d6;
+}
+
+
+/* main header styles - end */
+
+/* section services - start */
+
+#services {
+    background-color: #fff;
+}
+
+#services i {
+    border: 1px solid #0ed8d6;
+    border-radius: 50%;
+    background-color: #0ed8d6;
+    font-size: 2.5em;
+    color: #fff;
+    padding: 22px;
+    margin-bottom: 25px;
+}
+
+/* section services - end */
+
+/* section portfolio - start */
+
+#portfolio {
+    background: #fafafa;
+}
+
+#portfolio .portfolio-item-contener {
+    overflow: hidden;
+}
+
+#portfolio .portfolio-img {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    transition: all .4s ease-in-out;
+    position: relative;
+}
+
+#portfolio .portfolio-img::before {
+    content: '\f067';
+    font-family: FontAwesome;
+    font-size: 3em;
+    position: absolute;
+    line-height: 400px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(14, 216, 214, 0.75);
+    color: #fff;
+    opacity: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+#portfolio .portfolio-img:hover::before {
+    opacity: 1;
+}
+
+#portfolio .portfolio-img:hover {
+    transform: scale(1.2);
+}
+
+#portfolio-img-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio-img-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio-img-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio-img-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio-img-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio-img-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+figcaption {
+    background-color: #fff;
+    padding: 20px 0px;
+}
+
+/* section portfolio - end */
